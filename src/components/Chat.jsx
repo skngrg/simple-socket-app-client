@@ -9,7 +9,7 @@ import io from 'socket.io-client';
 import styles from '../styles/Chat.module.css';
 import { Messages } from './Messages';
 
-const socket = io.connect('http://localhost:4000');
+const socket = io.connect('https://simple-socket-app-server.onrender.com');
 
 export const Chat = () => {
 	const { search } = useLocation();
